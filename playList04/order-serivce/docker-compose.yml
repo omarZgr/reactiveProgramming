@@ -1,0 +1,18 @@
+services:
+  postgres:
+    container_name: postgres-sql-ptpShipping
+    image: postgres
+    environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+      PGDATA: /var/lib/postgresql/data
+      POSTGRES_DB: orderdb
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - 5433:5432
+
+
+volumes:
+  postgres:
+    driver: local

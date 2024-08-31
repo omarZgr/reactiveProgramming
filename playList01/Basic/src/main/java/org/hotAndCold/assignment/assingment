@@ -1,0 +1,12 @@
+Assingment
+
+I have PurchaseOrder Entity , right
+he has
+String item
+double price
+String category
+int quantity
+
+eandi OrderSerive  right . hia li kat publier l'information dial quantity li nqsat mn inventory  + shhal rbhna li hia Revenue f fkul category
+donc eadna aussi Revenue class , mghdish ndiru entity eandiru ea service  meme chose pour inventory
+donc principe c'est de listign data from order-service . and based on this data nqss quantiny mn invemtoy  u zid rbh f revenue

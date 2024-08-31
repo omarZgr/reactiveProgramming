@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: user-service
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/userdb
+    username: postgres
+    password: password
+    initialization-mode: always
+    schema: classpath:init.sql
+
+server:
+  port: 8092
+
+
+
+logging:
+  level:
+    org.springframework.r2dbc.connection: DEBUG
+    org.springframework.data.r2dbc.core: DEBUG
+    io.r2dbc.spi: DEBUG
+    org.springframework.data.r2dbc: DEBUG
+    org.springframework.transaction: DEBUG
+    org.springframework.jdbc.core: DEBUG
